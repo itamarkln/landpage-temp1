@@ -1,1 +1,26 @@
 /* You can add global styles to this file, and also import other style files */
+//----------------------------------*\
+// Fonts
+//----------------------------------*/
+@import 'assets/scss/modules/_fonts.scss';
+// primary font
+$primary-font: 'Poppins-light';
+$font-regular: 'Poppins-regular';
+$font-bold: 'Poppins-bold';
+$font-italic: 'Poppins-italic';
+// font-weight
+$thin:100;
+$light:300;
+$regular:400;
+$bold:700;
+$black:900;
+// Font size
+$font-xm: 10px;
+$primary-fs:12px;
+$font-sm: 14px;
+$font-md: 16px;
+$font-lg: 18px;
+body {
+    font-family: $primary-font;
+    font-size: $primary-fs;
+}
