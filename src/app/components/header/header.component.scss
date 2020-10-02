@@ -1,0 +1,94 @@
+$lighter-gray: lighten($color: #676470, $amount: 10%);
+
+.container {
+    position: relative;
+    width: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0;
+    background: var(--dark);
+    color: var(--light);
+
+    .row:first-child {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        margin: 0;
+        padding: 6rem 0 0 0;
+    
+        .left, .right {
+            margin: 3.8rem 0;
+            padding: 0 2rem;
+
+            h1 {
+                font-size: 35px;
+                font-weight: 600;
+            }
+
+            p {
+                margin: 2rem 0;
+                color: $lighter-gray;
+            }
+            
+            .btn-header {
+                background: var(--primary);
+                color: var(--light);
+                margin: 1rem 1rem 0 0;
+                padding: .8rem 2rem;
+                border: 1px solid var(--primary);
+                border-radius: 2rem;
+                font-size: var(--font-primary-sm);
+                box-shadow: 0 5px 8px 0 rgba(#ff215e, 0.4);
+                transition: 0.3s ease;
+
+                &:hover {
+                    background: var(--dark);
+                    color: var(--primary);
+                }
+
+                &:nth-of-type(2) {
+                    background: var(--dark);
+                    color: var(--primary);
+
+                    &:hover {
+                        background: var(--primary);
+                        color: var(--light);
+                    }
+                }
+            }
+        }
+    }
+
+    .row:nth-child(2) {
+        position: relative;
+
+        .scroll-down {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+            transition: .4s;
+            animation: moveUpDown 1.4s linear infinite;
+
+            &:hover {
+                color: $lighter-gray;
+            }
+        }
+    }
+
+    .wave {
+        background: var(--dark);
+        width: 100%;
+    }
+}
+
+@keyframes moveUpDown {
+  0%, 100% {
+    top: 0;
+  }
+  50% {
+    top: 10px;
+  }
+}

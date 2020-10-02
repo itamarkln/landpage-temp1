@@ -1,26 +1,74 @@
 /* You can add global styles to this file, and also import other style files */
-//----------------------------------*\
-// Fonts
-//----------------------------------*/
-@import 'assets/scss/modules/_fonts.scss';
+
+@import '~bootstrap/dist/css/bootstrap.min.css';
+@import "assets/scss/modules/_fonts.scss";
+
 // primary font
-$primary-font: 'Poppins-light';
-$font-regular: 'Poppins-regular';
-$font-bold: 'Poppins-bold';
-$font-italic: 'Poppins-italic';
+$primary-light: "Poppins-light";
+$primary-font: "Poppins-regular";
+$font-bold: "Poppins-bold";
+$font-italic: "Poppins-italic";
+
 // font-weight
-$thin:100;
-$light:300;
-$regular:400;
-$bold:700;
-$black:900;
+$thin: 100;
+$light: 300;
+$regular: 400;
+$bold: 700;
+$black: 900;
+
 // Font size
-$font-xm: 10px;
-$primary-fs:12px;
-$font-sm: 14px;
+$font-xs: 10px;
+$primary-sm: 12px;
+$primary-fs: 14px;
 $font-md: 16px;
 $font-lg: 18px;
+$font-xl: 28px;
+
+:root {
+  --primary: #FF215E;
+  --dark: #121320;
+  --light: #EBEBEB;
+  --light-gray: #676470;
+  --brown: #9b7874;
+  --orange: #ff220c;
+  --font-xs: 10px;
+  --font-primary-sm: 12px;
+  --font-primary-rg: 14px;
+  --font-md: 16px;
+  --font-lg: 18px;
+  --font-xl: 28px;
+}
+
+/* Scrollbar width */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+/* Scrollbar handle */
+::-webkit-scrollbar-thumb {
+  background: lighten($color: #676470, $amount: 10%); 
+  border-radius: 8px;
+}
+
+/* Scrollbar handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--light-gray);
+}
+
 body {
-    font-family: $primary-font;
-    font-size: $primary-fs;
+  font-family: $primary-font;
+  font-size: $primary-fs;
+  overflow-x: hidden;
+
+  button {
+    -webkit-box-shadow: 10px 10px 32px -20px rgba(14,14,14,0.59);
+    -moz-box-shadow: 10px 10px 32px -20px rgba(14,14,14,0.59);
+    box-shadow: 10px 10px 32px -20px rgba(14,14,14,0.59);
+  }
+
+  button:focus {
+    outline: none;
+    cursor: pointer;
+  }
 }

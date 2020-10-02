@@ -1,0 +1,50 @@
+.codebox-window {
+  background: var(--dark);
+  color: var(--light);
+  padding: 20px;
+  margin: 25px;
+  border-radius: 1rem;
+  font-family: Arial;
+  border: 2px solid var(--primary);
+  -webkit-box-shadow: 0 0 9px 1px var(--primary);
+  -moz-box-shadow: 0 0 9px 1px var(--primary);
+  box-shadow: 0 0 9px 1px var(--primary);
+}
+
+.clearfix {
+  clear: both;
+}
+
+.codebox-circle-red {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 8px 0 0;
+  float: left;
+  background: rgb(249, 95,92, 1);
+}
+
+.codebox-circle-orange {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin: 0 8px 0 0;
+  float: left;
+  background: rgb(252, 186, 70, 1);
+} 
+
+.codebox-circle-green {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  float: left;
+  background: rgb(68, 199, 79, 1);
+}
+
+.codebox-window-content {
+  margin: 20px 0 0 0;
+
+  .language-html {
+    color: var(--light-gray);
+  }
+}
