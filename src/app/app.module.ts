@@ -13,6 +13,8 @@ import { ScrollToModule } from '@nicky-lenaers/ngx-scroll-to';
 import { FeatherIconsModule } from './common/modules/feather-icons/feather-icons.module';
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { ServicesComponent } from './components/services/services.component';
+import { MoveToContactComponent } from './components/move-to-contact/move-to-contact.component';
+import { OurSpecialismComponent } from './components/our-specialism/our-specialism.component';
 
 
 @NgModule({
@@ -23,7 +25,9 @@ import { ServicesComponent } from './components/services/services.component';
     MacosHtmlWindowComponent,
     AboutComponent,
     LogoSliderComponent,
-    ServicesComponent
+    ServicesComponent,
+    MoveToContactComponent,
+    OurSpecialismComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,21 @@
+<div class="our-specialism-container">
+    <div class="row">
+        <div class="col-md-6 content">
+            <h1>What makes us so special</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
+                varius enim in eros elementum tristique. Duis cursus, mi quis viverra
+                ornare, eros dolor interdum nulla.
+            </p>
+        </div>
+        <div class="images-wrapper">
+            <div class="col-md-6 images">
+                <div class="image-container" *ngFor="let imageItem of imagesItems">
+                    <span class="icon"><img src="{{imageItem.src}}" alt="{{imageItem.alt}}"></span>
+                    <h4 class="number">{{imageItem.value}}</h4>
+                    <h6 class="text">{{imageItem.text}}</h6>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

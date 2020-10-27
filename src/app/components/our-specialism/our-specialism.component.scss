@@ -1,0 +1,116 @@
+.our-specialism-container {
+    margin: 12rem auto;
+    padding: 0 4rem;
+    width: 100%;
+    max-width: 1245px;
+
+    .row {
+        align-items: center;
+        justify-content: center;
+
+        .content {
+            margin-bottom: 1rem;
+
+            h1 {
+                font-size: 35px;
+                font-weight: 600;
+            }
+
+            p {
+                margin: 2rem 0;
+            }
+        }
+
+        .images-wrapper {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            .images {
+                display: grid;
+                align-items: center;
+                justify-content: center;
+                grid-template-columns: .1fr .1fr;
+                grid-column-gap: 2rem;
+                grid-row-gap: 0;
+                width: 100%;
+                min-width: 100%;
+
+                .image-container {
+                    margin: auto;
+                    padding: 2rem;
+                    min-width: 14rem;
+                    width: 100%;
+                    background: rgba(255, 33, 94, .08);
+                    border-radius: .8rem;
+                    text-align: center;
+
+                    &:nth-child(even) {
+                        margin-top: 2rem;
+                    }
+                    
+                    span.icon {
+                        img {
+                            width: 48px;
+                            height: auto;
+                            margin-bottom: 1rem;
+                        }
+                    }
+
+                    h4.number {
+                        font-size: var(--font-xl);
+                        font-weight: bold;
+                    }
+
+                    h6.text {
+                        text-transform: uppercase;
+                        color: var(--primary);
+                        font-weight: bold;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 981px) {
+    .content, .images-wrapper {
+        min-width: 100%;
+    }
+
+    .content {
+        min-width: 40rem;
+    }
+}
+
+@media only screen and (max-width: 628px) {
+    .content, .images-wrapper {
+        min-width: 100%;
+
+        h1 {
+            font-size: var(--font-xl) !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 498px) {
+    .images-wrapper {
+        .images {
+            .image-container {
+                min-width: 10rem !important;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 374px) {
+    .images-wrapper {
+        .images {
+            grid-column-gap: .8rem !important;
+
+            .image-container {
+                min-width: 9rem !important;
+            }
+        }
+    }
+}
