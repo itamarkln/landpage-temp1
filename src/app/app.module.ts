@@ -15,6 +15,10 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { ServicesComponent } from './components/services/services.component';
 import { MoveToContactComponent } from './components/move-to-contact/move-to-contact.component';
 import { OurSpecialismComponent } from './components/our-specialism/our-specialism.component';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ContactService } from './services/contact.service';
+import { HttpClientModule } from '@angular/common/http';
 
 
 @NgModule({
@@ -27,17 +31,21 @@ import { OurSpecialismComponent } from './components/our-specialism/our-speciali
     LogoSliderComponent,
     ServicesComponent,
     MoveToContactComponent,
-    OurSpecialismComponent
+    OurSpecialismComponent,
+    ContactUsComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     BrowserAnimationsModule,
     AppRoutingModule,
     ScrollToModule.forRoot(),
     FeatherIconsModule,
-    CarouselModule
+    CarouselModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
-  providers: [],
+  providers: [ContactService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

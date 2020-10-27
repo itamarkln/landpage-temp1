@@ -1,3 +1,5 @@
+$light-gray: #807d8a;
+
 .move-to-container {
     position: relative;
     margin: 10rem auto;
@@ -36,7 +38,7 @@
         margin: auto;
         margin-bottom: 1rem;
         max-width: 32rem;
-        color: var(--light-gray);
+        color: $light-gray;
     }
 
     button.btn-contact {

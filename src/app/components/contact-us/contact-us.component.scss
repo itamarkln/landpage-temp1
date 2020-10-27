@@ -1,0 +1,78 @@
+$light-gray: #807d8a;
+
+.contact-wrapper {
+    padding: 0 8rem 8rem 8rem;
+    width: 100%;
+    background: var(--dark);
+
+    .contact-container {
+        margin: auto;
+        max-width: 1245px;
+
+        h1 {
+            font-weight: bold;
+            color: var(--light);
+            text-align: center;
+        }
+
+        p {
+            color: $light-gray;
+            max-width: 26rem;
+            text-align: center;
+            margin: 1rem auto 2.8rem auto;
+        }
+
+        .contact-form {
+            form {
+                margin: auto;
+                max-width: 24rem;
+                width: 100%;
+
+                .form-group {
+                    margin: 2rem auto;
+
+                    .form-control {
+                        padding: 0;
+                        background-color: transparent;
+                        border: none;
+                        border-bottom: 1px solid $light-gray;
+                        color: var(--light);
+                        outline: none !important;
+                        transition: all .3s ease-in-out;
+                        
+                        &::placeholder {
+                            color: $light-gray;
+                        }
+
+                        &:hover, &:focus {
+                            outline: none !important;
+                            border-bottom: 1px solid var(--primary);
+                        }
+                    }
+                }
+
+                .btn-contact {
+                    background: var(--primary);
+                    color: var(--light);
+                    margin: 1rem auto;
+                    width: 100%;
+                    padding: .8rem 2rem;
+                    border: 1px solid var(--primary);
+                    border-radius: 2rem;
+                    font-size: var(--font-primary-sm);
+                    box-shadow: 0 5px 8px 0 rgba(#ff215e, 0.4);
+                    transition: 0.3s ease;
+    
+                    &:hover {
+                        background: var(--dark);
+                        color: var(--primary);
+                    }
+                }
+
+                .invalid-feedback {
+                    color: var(--primary) !important;
+                }
+            }
+        }
+    }
+}
