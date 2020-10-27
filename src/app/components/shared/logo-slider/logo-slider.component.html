@@ -1,0 +1,10 @@
+<div class="carousel-container">
+    <h6 class="carousel-title">{{slideTitle}}</h6>
+    <owl-carousel-o class="slide-container" [options]="customOptions">
+        <ng-template *ngFor="let logo of logos" carouselSlide>
+            <div class="carousel-slide">
+                <img src="{{logo.src}}" alt="{{logo.alt}}" />
+            </div>
+        </ng-template>
+    </owl-carousel-o>
+</div>

@@ -56,9 +56,12 @@ $font-xl: 28px;
   background: var(--light-gray);
 }
 
-body {
+html, body {
   font-family: $primary-font;
   font-size: $primary-fs;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
   overflow-x: hidden;
 
   button {

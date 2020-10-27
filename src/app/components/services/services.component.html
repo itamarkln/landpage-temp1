@@ -1,0 +1,13 @@
+<div class="services-container">
+    <div class="titles">
+        <h6 class="subtitle">what we provide</h6>
+        <h2 class="title">We build experience</h2>
+    </div>
+    <div class="services-items">
+        <div class="service-item" *ngFor="let serviceItem of servicesItems">
+            <span class="item-icon"><img src="{{serviceItem.icon}}" alt="{{serviceItem.title}}"></span>
+            <h5 class="item-title">{{serviceItem.title}}</h5>
+            <p class="item-desc">{{serviceItem.desc}}</p>
+        </div>
+    </div>
+</div>

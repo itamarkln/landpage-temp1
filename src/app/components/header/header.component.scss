@@ -63,6 +63,7 @@ $lighter-gray: lighten($color: #676470, $amount: 10%);
 
     .row:nth-child(2) {
         position: relative;
+        z-index: 3;
 
         .scroll-down {
             position: absolute;
@@ -79,8 +80,21 @@ $lighter-gray: lighten($color: #676470, $amount: 10%);
     }
 
     .wave {
-        background: var(--dark);
+        position: relative;
+        background: #FFF;
         width: 100%;
+
+        svg {
+            position: relative;
+            z-index: 2;
+
+            &:nth-of-type(2) {
+                position: absolute;
+                top: -28px;
+                left: 0;
+                z-index: 1;
+            }
+        }
     }
 }
 

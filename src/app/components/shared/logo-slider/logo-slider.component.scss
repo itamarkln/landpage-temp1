@@ -1,0 +1,14 @@
+.carousel-container {
+    width: 100%;
+    max-width: 1245px;
+    margin: 6rem auto;
+    padding: 0 4rem;
+
+    h6.carousel-title {
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--primary);
+        font-weight: bold;
+        margin: 0;
+    }
+}

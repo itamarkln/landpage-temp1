@@ -5,7 +5,7 @@
             <i-feather name="x" (click)="onNavClick($event)"></i-feather>
         </ng-template>
     </div>
-    <div class="logo"><a href="#home-section">Your Logo</a></div>
+    <div class="logo"><a (click)="onNavLinkClick($event, 'header')">Your Logo</a></div>
     <div class="menu">
         <ul [ngClass]="{ 'showing': mobileIsOpen }">
             <li><a (click)="onNavLinkClick($event, 'header')">Discover</a></li>
