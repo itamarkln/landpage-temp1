@@ -1,12 +1,13 @@
 <div id="header" class="container">
   <div class="row">
+    <app-particles></app-particles>
     <div class="col-md-5 left">
       <h1>Make your next collaboration as easy as possible.</h1>
       <p>
         Work remotely with your team as easily as possible. Use premium remote
         features for the best work experience.
       </p>
-      <button class="btn-header">View my work</button>
+      <button class="btn-header" (click)="onScrollDown($event, 'logo-slider')">Get started</button>
     </div>
     <div class="col-md-5 right">
       <app-macos-html-window></app-macos-html-window>
@@ -16,7 +17,7 @@
     <div class="scroll-down">
       <i-feather
         name="chevron-down"
-        (click)="onScrollDown($event, 'services')"
+        (click)="onScrollDown($event, 'logo-slider')"
       ></i-feather>
     </div>
   </div>

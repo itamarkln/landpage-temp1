@@ -1,13 +1,17 @@
 import { NgModule } from '@angular/core';
 
 import { FeatherModule } from 'angular-feather';
-import { Menu, X, ChevronDown } from 'angular-feather/icons';
+import { Menu, X, ChevronDown, Instagram, Facebook, Twitter, Linkedin } from 'angular-feather/icons';
 
 // Select some icons (use an object, not an array)
 const icons = {
     Menu,
     X,
-    ChevronDown
+    ChevronDown,
+    Instagram,
+    Facebook,
+    Twitter,
+    Linkedin
 };
 
 @NgModule({

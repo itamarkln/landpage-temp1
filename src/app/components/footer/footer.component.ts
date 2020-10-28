@@ -2,19 +2,18 @@ import { Component, OnInit } from '@angular/core';
 import { ScrollToByClickService } from 'src/app/common/services/scroll-to.service';
 
 @Component({
-  selector: 'app-move-to-contact',
-  templateUrl: './move-to-contact.component.html',
-  styleUrls: ['./move-to-contact.component.scss']
+  selector: 'app-footer',
+  templateUrl: './footer.component.html',
+  styleUrls: ['./footer.component.scss']
 })
-export class MoveToContactComponent implements OnInit {
+export class FooterComponent implements OnInit {
 
   constructor(private readonly scrollToByClickService: ScrollToByClickService) { }
 
   ngOnInit(): void {
   }
 
-
-  onScrollDown(e, dest) {
+  onNavigateTo($event, dest) {
     this.scrollToByClickService.triggerScrollTo(dest);
   }
 }

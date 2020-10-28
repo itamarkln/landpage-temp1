@@ -19,6 +19,8 @@ import { ContactUsComponent } from './components/contact-us/contact-us.component
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ContactService } from './services/contact.service';
 import { HttpClientModule } from '@angular/common/http';
+import { ParticlesComponent } from './components/shared/particles/particles.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -32,7 +34,9 @@ import { HttpClientModule } from '@angular/common/http';
     ServicesComponent,
     MoveToContactComponent,
     OurSpecialismComponent,
-    ContactUsComponent
+    ContactUsComponent,
+    ParticlesComponent,
+    FooterComponent
   ],
   imports: [
     HttpClientModule,
